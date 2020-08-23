@@ -8,6 +8,9 @@ It uses the concept of *Emission Probability* and *Transition Probabiity*, toget
 We can notice that Plain Viterbi algorithm works efficiently, however there is a scope for improvement, as the alogorithm is not able to perform well for words which were not there in the training data. For the words which were not present in the training data it just assigns first POS tag, which is incorrect. This scenario is very common in real world as there can be multiple scenarios where we encounter new words which were not present in the training data. Hence we need to put some backoff algorithm for such missing words scenario.
 
 # Modified Solutions
-Here we have used a modification over the Plain HMM-Viterbi algorithm. 
-Modification 1 : We tried to put an Rule Based Tagger for the scenarios where the words itself is not present in the training data.
+Here we have used a modification over the Plain HMM-Viterbi algorithm./
+Modification 1 : We tried to put an Rule Based Tagger for the scenarios where the words itself is not present in the training data./
 Modification 2 : For the second scenario, we have tried Unigram or Laxicon Tagger(backed off by Rule Based Tagger) for the scenario of missing word in train data. We had to use the back-off as Laxicon will also fail if the word is not present in the training data.
+
+# Solution
+[HMM+-based+POS+tagging.ipynb](https://github.com/BurnwalAmardeep/Parts-Of-Speech-tagging-NLP-/blob/master/HMM%2B-based%2BPOS%2Btagging.ipynb)
